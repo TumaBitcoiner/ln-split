@@ -1,17 +1,17 @@
 {
   "name": "ln-split",
   "version": "0.1.0",
-  "homepage": "https://TumaBitcoiner.github.io/ln-split",
+  "homepage": "https://tumabitcoiner.github.io/ln-split/",
   "private": true,
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "tsc && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit -p tsconfig.app.json",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.57.4",
