@@ -3,6 +3,8 @@ import { Zap, Users, Wallet } from 'lucide-react';
 import { InvoiceQRCode } from './components/InvoiceQRCode';
 import { DonationBox } from './components/DonationBox';
 import { splitBill } from './utils/splitBill';
+import iconImage from './assets/icon.png';
+
 
 function App() {
   const [lnaddress, setLnaddress] = useState('');
@@ -63,8 +65,12 @@ function App() {
       <div className="w-full max-w-6xl">
         <div className="bg-white rounded-2xl shadow-xl p-8 border border-orange-100">
           <div className="flex items-center justify-center mb-8">
-            <div className="bg-gradient-to-br from-orange-400 to-amber-500 p-3 rounded-xl shadow-lg">
-              <Zap className="w-8 h-8 text-white" />
+            <div className="bg-black p-3 rounded-xl shadow-lg">
+              <img 
+                src={iconImage} 
+                alt="LN Split Logo" 
+                className="w-24 h-24"
+              />
             </div>
           </div>
 
