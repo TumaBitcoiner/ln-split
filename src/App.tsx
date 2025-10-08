@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Zap, Users, Wallet } from 'lucide-react';
+import { Users, Wallet } from 'lucide-react';
 import { InvoiceQRCode } from './components/InvoiceQRCode';
 import { DonationBox } from './components/DonationBox';
 import { splitBill } from './utils/splitBill';
@@ -186,7 +186,7 @@ function App() {
         )}
 
         <p className="text-center text-gray-500 text-sm mt-6">
-          Powered by Lightning Network
+          Built for Lightning++ Hackathon in Berlin 2025!
         </p>
       </div>
     </div>

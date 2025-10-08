@@ -45,7 +45,7 @@ export function DonationBox({ donationAddress }: DonationBoxProps) {
       }
       
       // Generate invoice for 10 sats (10000 millisats)
-      const payLink = `${lnurlData.callback}?amount=10000`;
+      const payLink = `${lnurlData.callback}?amount=100000`;
       const invoiceResponse = await fetch(payLink);
       
       if (!invoiceResponse.ok) {
@@ -108,7 +108,7 @@ export function DonationBox({ donationAddress }: DonationBoxProps) {
       </div>
       
       <p className="text-center text-gray-600 mb-6">
-        Enjoying LN Split? Support development with a 10 sat donation! ⚡
+        Enjoying LN Split? Support development with a 100 sat donation! ⚡
       </p>
 
       {isLoading ? (
